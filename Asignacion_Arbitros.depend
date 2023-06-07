@@ -1,0 +1,30 @@
+# depslib dependency file v1.0
+1686097706 source:e:\programas\asignacion_arbitros\main.cpp
+	<iostream>
+	"Partido.h"
+	"Loader.h"
+	"imprimir_info.h"
+
+1686091018 source:e:\programas\asignacion_arbitros\src\partido.cpp
+	"Partido.h"
+
+1686091008 e:\programas\asignacion_arbitros\include\partido.h
+
+1686095860 source:e:\programas\asignacion_arbitros\imprimir_info.cpp
+	<vector>
+	<iostream>
+
+1686097911 source:e:\programas\asignacion_arbitros\src\loader.cpp
+	"Loader.h"
+	<ctime>
+
+1686097062 e:\programas\asignacion_arbitros\include\loader.h
+	<iostream>
+	<vector>
+
+1686096173 e:\programas\asignacion_arbitros\imprimir_info.cpp
+
+1686098072 e:\programas\asignacion_arbitros\imprimir_info.h
+	<iostream>
+	<vector>
+
