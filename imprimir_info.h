@@ -10,6 +10,19 @@ using namespace std;
 ostream & operator << (ostream & salida, const Partido & partido);
 void imprimir_puntajes(const vector<vector<int>> & puntajes);
 void imprimir_partidos(const vector<Partido> & partidos);
+void imprimir_asignacion(const vector<int> & asignacion);
+
+void imprimir_asignacion(const vector<int> & asignacion)
+{
+    typename vector<int>::const_iterator it_a = asignacion.begin();
+    cout << "\nMejor asignacion posible: " << endl;
+    int i=0;
+    while(it_a != asignacion.end()) {
+        cout <<  "Partido "  << i+1 << ": " << *it_a<< endl;
+        it_a++;
+        i++;
+    }
+}
 
 void imprimir_puntajes(const vector<vector<int>> & puntajes)
 {
