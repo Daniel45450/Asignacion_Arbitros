@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <vector>
+#include "Partido.h"
 
 using namespace std;
 
@@ -13,6 +14,7 @@ class Loader
         Loader();
         virtual ~Loader();
         void cargar_puntajes(vector<vector<int>> & puntajes, int puntaje_min, int puntaje_max);
+        void cargar_enfrentamientos(vector<Partido> & partidos, int cant_equipos);
 
 
     protected:

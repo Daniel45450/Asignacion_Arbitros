@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1686097706 source:e:\programas\asignacion_arbitros\main.cpp
+1686267938 source:e:\programas\asignacion_arbitros\main.cpp
 	<iostream>
 	"Partido.h"
 	"Loader.h"
@@ -14,17 +14,19 @@
 	<vector>
 	<iostream>
 
-1686097911 source:e:\programas\asignacion_arbitros\src\loader.cpp
+1686268728 source:e:\programas\asignacion_arbitros\src\loader.cpp
 	"Loader.h"
 	<ctime>
 
-1686097062 e:\programas\asignacion_arbitros\include\loader.h
+1686266730 e:\programas\asignacion_arbitros\include\loader.h
 	<iostream>
 	<vector>
+	"Partido.h"
 
 1686096173 e:\programas\asignacion_arbitros\imprimir_info.cpp
 
-1686098072 e:\programas\asignacion_arbitros\imprimir_info.h
+1686268741 e:\programas\asignacion_arbitros\imprimir_info.h
 	<iostream>
 	<vector>
+	"Partido.h"
 

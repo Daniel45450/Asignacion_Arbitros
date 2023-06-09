@@ -38,3 +38,49 @@ void Loader::cargar_puntajes(vector<vector<int>> & puntajes, int puntaje_min, in
         }
     }
 }
+
+void Loader::cargar_enfrentamientos(vector<Partido> & partidos, int cant_equipos)
+{
+    vector<bool> agregado(cant_equipos, false);
+    int cant_partidos = cant_equipos/2;
+    char opcion;
+    cout << "\nCargar enfrentamientos de forma aleatoria? (y/n) ";
+    cin >> opcion;
+    int i=0;
+    srand(time(nullptr));
+    if(toupper(opcion) == 'Y')
+    {
+        while(i<cant_partidos) {
+            int a = rand() % cant_equipos;
+            int b = rand() % cant_equipos;
+            if(!agregado[a] && !agregado[b] && a != b) {
+                    agregado[a] = true;
+                    agregado[b] = true;
+                    Partido p(a,b);
+                    partidos.push_back(p);
+                    i++;
+            }
+        }
+    }
+    else {
+            int a;
+            int b;
+            while(i<cant_partidos) {
+                cout << "\nAgregar nuevo enfrentamiento\n" << endl;
+                cout << "Ingresa el primer equipo: ";
+                cin >> a;
+                cout << "Ingresa el segundo equipo: ";
+                cin >> b;
+                if(!agregado[a] && !agregado[b] && a != b) {
+                        Partido p(a,b);
+                        partidos.push_back(p);
+                        i++;
+                        agregado[a] = true;
+                        agregado[b] = true;
+                }
+                else {
+                    cout << "Estos equipos ya tienen un enfrentamiento asignado, ingresa un enfrentamiento nuevo" << endl;
+                }
+            }
+        }
+}

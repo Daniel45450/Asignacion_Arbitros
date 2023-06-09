@@ -24,5 +24,9 @@ int main()
     vector<vector<int>> puntajes(cant_equipos, vector<int>(cant_arbitros, 0)); // Matriz usando stl
     loader.cargar_puntajes(puntajes, 0 , 10);
     imprimir_puntajes(puntajes);
+    vector<Partido> partidos;
+    loader.cargar_enfrentamientos(partidos, cant_equipos);
+    imprimir_partidos(partidos);
+    //asignar_arbitros();
     return 0;
 }
